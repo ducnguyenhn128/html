@@ -1,0 +1,97 @@
+ul {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Sap xep cac button canh nhau */
+li {
+    float:left;    /*important */
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: #ffffff;
+}
+
+li a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Change color when hover Khoa hoc chuyen de. Lap trinh web asp*/
+li a:hover , .sub-menu:hover {
+    background-color: brown;
+    color: yellow;
+}
+
+
+/* Show the dropdown-content when hover "Khoa hoc chuyen de" */
+.dropdown:hover .dropdown-content {
+    display:grid ;
+}
+
+/* Format Dropdown content Left align */
+.dropdown-content a, .sub-menu{
+    text-align: left;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffffff;
+}
+/* fix 2 border: submenu and asp  */
+.sub-menu .asp {
+    border-bottom: 0px;
+}
+
+/* Show the 2nd dropdown menu when hover: "Lap trinh Web ASP.NET" */
+.sub-menu:hover  .dropdown-content2{
+    display: grid;
+    position:absolute;
+    top: 95px;
+    left: 307px;
+}
+
+/* Format Dropdown content (in Khoa hoc chuyen de) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    background-color: #9b9999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Format Dropdown content 2 */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 350px;
+    background-color: #9b9999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+/* Change button color (menu) when hover */
+.dropdown:hover .khoahoc {
+    background-color: brown;
+    color: yellow;
+}
+/* Change button color (2nd menu) when hover */
+.sub-menu:hover .asp {
+    background-color: brown;
+    color: yellow;
+}
+
+
+
+
