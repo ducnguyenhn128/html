@@ -1,0 +1,106 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h3 {
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.container {
+    background-color: white;
+}
+
+.container-intro {
+    text-align: center;
+}
+
+.container--food_menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 3%;
+    border-radius: 5%;
+}
+
+.container--food_menu--food {
+    width: 20%;
+    border: 2px solid brown;
+}
+
+.container--food_menu--food img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.container--food_menu--food--price {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+.container {
+    width: 70%;
+}
+
+
+
+/*  */
+.col-1 {
+    width: 8.33%;
+  }
+  
+  .col-2 {
+    width: 16.66%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.33%;
+  }
+  
+  .col-5 {
+    width: 41.66%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.33%;
+  }
+  
+  .col-8 {
+    width: 66.66%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.33%;
+  }
+  
+  .col-11 {
+    width: 91.66%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
