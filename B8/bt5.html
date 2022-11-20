@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+</body>
+<script >
+    alert("Input first number")
+    let a = prompt();
+    alert("Input second number")
+    let b = prompt();
+
+    num_a = Number(a);
+    num_b = Number(b);
+
+    // Finding Greatest Common Divisor (GCD)
+
+    function gcd(x,y) {
+            let z = x % y;
+            while ( z != 0) {
+                x = y;
+                y = z;
+                z = x % y;
+            }
+            return y;
+        }
+    
+    // Finding Least Common Multiple (LCM)
+    //  a * b = GCD(a,b) * LCM(a,b)
+    // so   LCM(a,b) =  a * b /  GCD(a,b)
+
+    function lcm(x,y) {
+        let lcm = 0;
+        gcd = gcd(x,y);
+        lcm = x * y / gcd;
+        return lcm;
+    }
+
+    console.log("Greatest Common Divisor");
+    console.log(gcd(num_a,num_b));
+    console.log("Least Common Multiple");
+    console.log(lcm(num_a,num_b));
+</script>
+</html>
+
