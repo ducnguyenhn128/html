@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Console log position of max number in array
+        array = [5, 12, 8, 130, 44]
+        var max = Number.MIN_VALUE;
+        var max_pos = 0;
+        for (let i in array) {
+            if (array[i] > max) {
+                max = array[i];
+                max_pos = i;
+            }
+        }
+        console.log("Greatest number position in array is")
+        console.log(max_pos);
+        // done
+
+    </script>
+</body>
+</html>

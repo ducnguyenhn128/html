@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arrayData = [
+            {
+                id:1,
+                name: 'Nguyen Van A',
+                age: 15,
+                point: 200,
+                address: 'Ha Noi'
+            },
+            {
+                id:2,
+                name: 'Nguyen Van B',
+                age: 16,
+                point: 100,
+                address: 'Ha Nam'
+            },
+            {
+                id:3,
+                name: 'Nguyen Van C',
+                age: 17,
+                point: 400,
+                address: 'Ha Noi'
+            },
+            {
+                id:4,
+                name: 'Nguyen Van D',
+                age: 18,
+                point: 250,
+                address: 'Cao Bang'
+            }
+        ];
+
+        // Filter people's address is Hanoi
+        var result = arrayData.filter(function(people){
+            return people.address == 'Ha Noi';
+        });
+        
+        console.log("People in Hanoi: ")
+        console.log(result);
+        // done
+    </script>
+</body>
+</html>
