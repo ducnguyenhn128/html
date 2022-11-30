@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Change color of the text when click -->
+    <h1 id="title">Hello World</h1>
+    <button id="change_color_btn">Change Color</button>
+    <script>
+        function changeColor() {
+            document.getElementById("title").style.color ='red';
+        }
+
+        document.getElementById('change_color_btn').onclick = changeColor;
+    </script>
+    <!-- done -->
+</body>
+</html>
