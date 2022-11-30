@@ -7,19 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Java Script DOM</Script>
-    <!-- <button onclick="myFunction"></button> -->
-    <!-- <div id="div1">
+    <h2>Java Script DOM</h2>
+    <p>Thêm một thẻ p với nội dung xin chào vào khối này</p>
 
-    </div> -->
+    <div id="div1">
+        <p>
+            Ở đây có 2 thẻ p thêm 1 thẻ nữa dùng createElement, createTextnode, appendChild
+        </p>
+        <p id="div2">Bên dưới là một thẻ p với nội dung xin chào</p>
+    </div>
 
 
     <script>
         // Create an element
         const text_content = document.createElement("p");
-        text_content.innerText = "Thêm một thẻ p với nội dung xin chào vào khối này";
+        text_content.innerHTML = "Xin chào";
         // Append to body
-        document.body.appendChild(text_content);
+        document.getElementById("div2").appendChild(text_content);
     </script>
 
 <!-- done -->
