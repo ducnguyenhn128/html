@@ -51,5 +51,11 @@
     text-decoration: line-through;
 }
 
+.searchBar {
+    margin: 10px;
+    height: 30px;
+}
 
-
+h2 {
+    margin: 10px;
+}
