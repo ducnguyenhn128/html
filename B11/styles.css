@@ -1,0 +1,55 @@
+#bookList {
+    width: 600px;
+    height: auto;
+    border: 1px gray solid ;
+    background-color: beige;
+    /* display:flex; */
+}
+
+.bookRow {
+    width: 94%;
+    color: white;
+    font-family: sans-serif;
+    margin: 10px;
+    display: inline-flex;
+
+}
+
+.bookItem {
+    background-color: brown;
+    color: white;
+    font-family: sans-serif;
+    width: 80%;
+    margin-right: 10px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;;
+    
+}
+
+.active {
+    text-decoration: line-through;
+}
+
+.deactive {
+
+}
+
+.bookItem-del-btn {
+    background-color: black;
+    border: none;
+    width: 15%;
+    color: white;
+}
+
+.bookItem-del-btn:hover {
+    color: black;
+    background-color: cadetblue;
+}
+
+#a1 {
+    text-decoration: line-through;
+}
+
+
+

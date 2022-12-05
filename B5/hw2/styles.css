@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+h1 {
+    margin: 40px;
+    font-size: 250%;
+}
+
+img {
+    width:100%;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 15px;
+    margin: 40px;
+}
+
+/* Long image take 2 rows */
+.container-col-long-item {
+    /* background-color: rgb(141, 81, 81); */
+    grid-row: span 2;
+}
+
+/* Normal image take 1 rows */
+.container-col-item {
+    /* background-color: rgb(141, 81, 81); */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Get total gold medal
+        var sports = [
+            {
+                name : "Athletic" , 
+                gold : 5
+            },
+            {
+                name: "Football",
+                gold: 2
+            },
+            {
+                name: "Cycling",
+                gold: 3
+            },
+            {
+                name: "Swiming",
+                gold: 10
+            },
+            {
+                name: "Cycling",
+                gold: 2
+            }
+        ]
+
+        function getTotalGold(sport) {
+            var total_gold = 0;
+            // Loop through every sport (Athletic, Football), called item
+            for (let item of sport) {
+                // Add number of gold medal, which is item["gold"] to the toal_goal
+                total_gold += item["gold"];
+            }
+            return total_gold;
+        }
+
+        console.log(getTotalGold(sports))
+
+    </script>
+</body>
+</html>

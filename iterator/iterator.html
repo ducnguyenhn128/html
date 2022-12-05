@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ctn">
+        <div>Book1</div>
+        <div>Walker</div>
+        <br>
+    </div>
+
+    <div class="ctn">
+        <div>Book2</div>
+        <div>Alan</div>
+        <br>
+    </div>
+
+    <div class="ctn">
+        <div>Book3</div>
+        <div>Peter</div>
+        <br>
+    </div>
+
+    <script>
+        const divs = document.querySelectorAll("div.ctn");
+        console.log(divs.length);
+        for (let i = 0; i < divs.length; i++) {
+            console.log(divs[i].children[1].innerHTML)
+        }
+    </script>
+</body>
+</html>

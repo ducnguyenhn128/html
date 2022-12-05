@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Join Array to String, add character between
+        var cars = ['Honda', 'BMW', 'Mazda']
+
+        function joinWithCharacter(array = cars, character = "&") {
+            var str = ""
+            for (let index in array) {
+                str += array[index];
+                if ( index < array.length - 1 ) {
+                    str += " "
+                    str += character;
+                    str += " "
+                }
+
+            }
+            console.log(str);
+        }
+
+        joinWithCharacter();
+
+        worldcup = ["England", "Germany", "USA", "Saudi"]
+        joinWithCharacter(worldcup, "-")
+
+
+
+
+    </script>
+</body>
+</html>

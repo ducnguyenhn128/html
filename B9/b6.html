@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Get most favorite sport
+        var sports = [
+            {
+                name : "Athletic" , 
+                like : 5
+            },
+            {
+                name: "Football",
+                like: 2
+            },
+            {
+                name: "Cycling",
+                like: 3
+            },
+            {
+                name: "Swiming",
+                like: 10
+            },
+            {
+                name: "Cycling",
+                like: 2
+            }
+        ]
+
+        function getMaxGold(sport) {
+            var max_like = 0;
+            var game = {};  
+            // Loop through every sport (Athletic, Football), called item
+            for (let item of sport) {
+                if (item['like'] > max_like) {
+                    max_like = item['like'];
+                    game = item;
+                }
+            }
+            // return a dictionary
+            return game;
+        }
+
+        console.log(getMaxGold(sports))
+ 
+    </script>
+</body>
+</html>

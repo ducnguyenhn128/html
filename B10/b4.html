@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Console log of max and min number in array
+        array = [5, 12, 8, 130, 44]
+        var max = Number.MIN_VALUE;
+        var min = Number.MAX_VALUE;
+        for (let i of array) {
+            if (i > max) {
+                max = i;
+            };
+            if (i < min) {
+                min = i;
+            }
+            
+        }
+        console.log("Greatest number is")
+        console.log(max);
+        console.log("Smallest number is")
+        console.log(min);
+
+        // done
+
+
+    </script>
+</body>
+</html>

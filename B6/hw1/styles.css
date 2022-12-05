@@ -1,0 +1,116 @@
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: lightgray;
+}
+
+h3 {
+    padding-top: 40px;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.container-intro {
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  font-size: 0.8rem;
+}
+
+
+.container--food_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 15px;
+}
+
+
+/* Including: an imgage, name, price and button */
+.container--food_menu--food {
+    max-width: 35%;
+    border-radius: 15px;
+
+}
+
+.container--food_menu :hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+.container--food_menu--food img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container--food_menu--food--price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 5%;
+}
+
+.food-name * {
+  font-size: 0.75rem;
+}
+
+
+/* For mobile phones:
+[class*="col-"] {
+  width: 100%;
+}
+ */
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .container--food_menu {
+    display: flex;
+    gap: 10%;
+    
+    /* border-radius: 18%; */
+    padding: 10px 8%;
+}
+ .container-intro {
+  padding: 0px 8%;
+ }
+}
+
+
+  /* https://huutien1904.github.io/food_landing */
+
+
+
+  
