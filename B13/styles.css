@@ -1,0 +1,19 @@
+.container {
+    background-color: darkolivegreen;
+    height: 800px;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+li {
+    font-family: sans-serif;
+    color: white;
+}
