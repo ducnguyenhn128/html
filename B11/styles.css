@@ -1,32 +1,68 @@
-#bookList {
-    width: 600px;
+.container {
+    margin: auto;
+    width: 800px;
     height: auto;
     border: 1px gray solid ;
     background-color: beige;
+    display: block;
     /* display:flex; */
 }
 
-.bookRow {
-    width: 94%;
-    color: white;
+/* div 1 */
+.searchBar {
+    text-align: center;
+    display: block;
+    margin: 20px;
     font-family: sans-serif;
-    margin: 10px;
-    display: inline-flex;
-
 }
 
-.bookItem {
-    background-color: brown;
-    color: white;
+input {
+    height: 30px;
+    width: 250px;
+}
+
+h1 {
     font-family: sans-serif;
-    width: 80%;
-    margin-right: 10px;
-    height: 40px;
-    padding: 10px;
-    font-size: 20px;;
+    margin-top: 20px;
+}
+/* div2 */
+h2 {
+    font-family: sans-serif;
+}
+
+#bookList {
+    /* background-color: rgb(48, 48, 117); */
+    margin: 20px;;
     
 }
 
+/* a Row, contain a book item, and a button to delete */
+.bookRow {
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    margin: 0px 20px 20px 0px;
+    display: inline-flex;
+}
+
+
+.bookItem {
+    background-color: rgb(31, 100, 18);
+    color: white;
+    font-family: sans-serif;
+    width: 85%;
+    /* margin-right: 20px; */
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    font-size: 20px;    
+}
+
+.bookItem:hover {
+    background-color: rgb(143, 180, 149);
+}
+
+/* active and deactive status, which book will be line through when deactive */
 .active {
     text-decoration: line-through;
 }
@@ -34,9 +70,9 @@
 .deactive {
 
 }
-
+/* delete button to del a book */
 .bookItem-del-btn {
-    background-color: black;
+    background-color: rgb(201, 134, 34);
     border: none;
     width: 15%;
     color: white;
@@ -44,18 +80,38 @@
 
 .bookItem-del-btn:hover {
     color: black;
-    background-color: cadetblue;
+    background-color: rgb(201, 150, 75);
 }
 
-#a1 {
-    text-decoration: line-through;
+
+
+
+/* Div 3 */
+.form-add-book {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 20px;
 }
 
-.searchBar {
-    margin: 10px;
-    height: 30px;
+#myForm button {
+    height: 35px;
+    background-color:rgb(201, 134, 34);
+    border: none;
+    /* width: 15%; */
+    color: white;
 }
 
-h2 {
-    margin: 10px;
+#myForm button:hover {
+    color: black;
+    background-color: rgb(201, 150, 75);
+}
+/* Div 4 */
+.footer {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(201, 201, 201);
 }
