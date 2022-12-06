@@ -23,7 +23,7 @@ function addBook(bookname, readStatus = "deactive" ) {
 
     // Create a button
     const bookItemDeleteBtn = document.createElement('button');
-    bookItemDeleteBtn.className = 'bookItem-del-btn';
+    bookItemDeleteBtn.className = 'bookItem-del-btn';  // add class for button
     bookItemDeleteBtn.innerHTML = "Delete";
         // Function Deletebook
     bookItemDeleteBtn.onclick = function(){
@@ -31,17 +31,23 @@ function addBook(bookname, readStatus = "deactive" ) {
         this.parentNode.remove();
     };
     
-    bookRow.appendChild(bookItem);
-    bookRow.appendChild(bookItemDeleteBtn);
-    document.getElementById("bookList").appendChild(bookRow);
+    bookRow.appendChild(bookItem);  // add a book item
+    bookRow.appendChild(bookItemDeleteBtn); // add a button to delete book
+    document.getElementById("bookList").appendChild(bookRow); // add to HTML page
 }
 
 
 // add book from form
 var form1 = document.getElementById('myForm');
-form1.addEventListener("submit",function() {
-    addBook(form1.elements[0].value);
-    event.preventDefault();
+form1.addEventListener("submit",function(event) {
+    if (form1.elements[0].value === '') {
+        alert("Please add a book"); // Alert if user dont type any thing
+        event.preventDefault();
+    } 
+    else {
+        addBook(form1.elements[0].value);
+        event.preventDefault();
+    }
 })
 
 
@@ -64,3 +70,32 @@ function loadBook() {
 loadBook();
 
 // deactive book
+
+
+
+const divs = document.querySelectorAll("div.bookRow");
+for (let i = 0; i < divs.length; i++) {
+    const str1 = divs[i].childNodes[0].innerHTML;
+}
+
+
+// seach book
+    // Get data from form
+    var form2 = document.getElementById("searchForm");
+    form2.addEventListener('keyup', function(event) {
+        event.preventDefault();
+
+        const input = form2.elements[0].value.toLowerCase();  //get input value from seach bar
+        const divs = document.querySelectorAll("div.bookRow"); // select for div has class name bookRow
+        for (let i = 0; i < divs.length; i++) {
+            const str1 = divs[i].childNodes[0].innerHTML.toLowerCase(); // get input value from book list, lower case that
+            // check subString
+            // using string.includes  . Notice that, this is case sensitive 
+            const subStrCheck = str1.includes(input); // check if any book list contain value from search bar
+            if (subStrCheck === false) {
+                divs[i].style.display = 'none'
+            } else {
+                divs[i].style.display = ''
+            }
+        }
+    })

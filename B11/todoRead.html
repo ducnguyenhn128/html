@@ -10,23 +10,41 @@
 </head>
 <body>
     
-    <div class="container" id="bookList">
-        <!-- <div class="bookRow">
-            <div class="bookItem">
-                Book1
-            </div>
-            <button class="bookItem-del-btn" onclick="return this.parentNode.remove()">Delete</button>
-        </div> -->
+    <div class="container">
+        <!-- Div 1: searchBar -->
+        <div class="searchBar">
+            <h1>Reading List</h1>
+            <p>Reading list in 2022</p>
+
+            <form id="searchForm">
+                <input placeholder="Seach book">
+                <!-- <button>Search</button> -->
+            </form>
+        </div>
+        
+        <!-- Div 2 : Book List -->
+        <div id="bookList">
+            <h2>Books to Read</h2>
+
+        </div>
+
+        <!-- Div 3 : Form to add Book -->
+        <div class="form-add-book">
+            <!-- <p>Add a book below here:</p> -->
+            <form id="myForm" >
+                <input id="book-title" name="book-title" placeholder="Add a book here">
+                <button>Add Book</button>
+            </form>
+        </div>
+
+        <!-- Div 4: Footer -->
+        <div class="footer">
+            @MindX 2022
+        </div>
     </div>
 
     <br>
     <br>
-    <p>This is a form</p>
-    <form id="myForm" >
-        <label>Book Title</label>
-        <input id="book-title" name="book-title">
-        <button>Add Book</button>
-    </form>
     <br>
     <!-- <button id="btn" onclick="addBookForm()">Add Book</button> -->
 

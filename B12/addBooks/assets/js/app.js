@@ -78,7 +78,7 @@ addForm.addEventListener('submit', (e) => {
 // filter
 const searchBook = forms['books__search'];
 searchBook.addEventListener('keyup', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     const input = searchBook.querySelector('input');
     const filter = input.value.toUpperCase();
