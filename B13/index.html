@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class = "container">
@@ -13,23 +14,41 @@
         <!-- 1st DIV  Input Form-->
         <div>
             <form id="inputForm">
-                <input id="taskItem" placeholder="complied">
+                <input id="taskItem" placeholder="Add a task">
                 <button>Add Task</button>
             </form>
+            <br>
         </div>
         <!-- 2nd DIV Task list-->
         <div >
             <ul id="taskList">
-
+                <!-- <li class="li-task-item">a1</li>
+                <li class="li-task-item">a2</li>
+                <li class="li-task-item">a3</li> -->
             </ul>
         </div>
 
         <!-- saved button -->
         <div>
             <br><br><br>
-            <button>Save task</button>
+            <button id="save_button">Save task</button>
         </div>
     </div>    
+    
+    <br>
+    <br>
+    
+    <div>
+        <div id="checkboxes">
+            <label>some label</label>
+            <ul>
+                <li><input type="checkbox"> checkbox 1</li>
+                <li><input type="checkbox"> checkbox 2</li>
+                <li><input type="checkbox"> checkbox 3</li>
+                <li><input type="checkbox"> checkbox 4</li>
+            </ul>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
