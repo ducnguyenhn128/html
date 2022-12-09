@@ -1,5 +1,3 @@
-.jumbotron {
-    background-image: url(https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_S8GbEDDJiUYPWq70.jpg);
-    background-size: cover;
-    height: 100%;
+#test {
+    overflow: hidden;
 }
