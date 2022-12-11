@@ -16,25 +16,24 @@
 /* new product */
 .newProduct {
     position: relative;
-    background-color: gray;
-    height: 650px;
+    /* background-color: gray; */
+    height: 900px;
     /* width:; */
     z-index: 1;
+    position: relative;
 }
 
 .newProduct img {
     width: 40%;
-    position: relative;
 }
 
-.test {
-    height: 500px;
-    width: 800px;
+.newCollection {
+    /* height: 500px;
+    width: 800px; */
     background-color: #b20300;
     position: absolute;
-    z-index: 1000;
-    right:5%;
-    top: 100px;
+    right: 5%;
+    top: 10%
     
 }
 h2 a {
