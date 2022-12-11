@@ -13,12 +13,28 @@
     text-decoration: none;
 }
 
+/* new product */
+.newProduct img {
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+.test {
+    height: 400px;
+    width: 1000px;
+    background-color: #b20300;
+    position: absolute;
+    z-index: 1000;
+    right:10%;
+    
+}
 h2 a {
     text-decoration: none;
     color: black;
 }
 
-#storeList {
+#storeBox {
     height:500px;
     overflow-y: scroll;
     border: 3px solid rgb(189, 188, 188);
@@ -26,8 +42,15 @@ h2 a {
     padding-top: 20px;
 }
 
-#storeList ul {
+#storeBox li {
     list-style: none;
+    margin-bottom: 20px;
+}
+
+#storeBox li p {
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 10px;
 }
 
 .contact_box {
