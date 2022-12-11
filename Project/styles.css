@@ -17,7 +17,7 @@
 .newProduct {
     position: relative;
     /* background-color: gray; */
-    height: 900px;
+    height: max-content;
     /* width:; */
     z-index: 1;
     position: relative;
