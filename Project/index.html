@@ -12,55 +12,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    
 </head>
 <body>
-    <!-- 1. Navbar -->
-    <div class="container-fluid">
-        
-        <div class="row d-none d-md-flex mx-5">
+    
+    <div class="container-fluid bg-secondary bg-gradient" style="--bs-bg-opacity: .15;">
+        <div class="row d-none d-md-flex mx-5 py-auto">
             <div class="col-6 my-auto">
-                <p>Hệ thống Showroom     |       Mua hàng: 0931733469</p>
+                Hệ thống Showroom     |       Mua hàng: 0931733469
             </div>
     
-            <div class="col-6 my-auto">
-                <p>Tài khoản    Giỏ hàng</p>
-                
+            <div class="col-6 text-end">
+                Tài khoản  |  Giỏ hàng
             </div>
     
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#"><img src="logo1.png" height="30"></a>
-            <!-- Collapsable menu -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsae" aria-controls="navbarCollapsae" aria-expanded="false" aria-label="Toggle navigation">
+    </div>
+
+    <!-- 1. Navbar -->
+    <nav class=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="logo1.png" height="20"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-            <!-- Menu list -->
-            <div class="collapse navbar-collapse" id="navbarCollapsae">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">SALE <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">ÁO KHOÁC 2 LỚP</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">ÁO KHOÁC DÀY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">ÁO POLO</a>
-                    </li>
-               
-                  </ul>
-    
-                  <!-- Search -->
-                
-            </div>
-            <!-- <form class="form-inline .d-sm-none ">
-                <input class="form-control mr-sm-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
-            </form> -->
-            
-        </nav>
-    </div>
+          
+        
+          <!-- Menu list -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SALE <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO KHOÁC 2 LỚP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO KHOÁC DÀY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO POLO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ĐỒ NỈ</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ÁO LEN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">SƠ MI - QUẦN DÀI</a>
+                  </li>               
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">COLLECTION</a>
+                  </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+    </nav>
+
 
     <!-- 2. Img jumbotron -->
     <!-- 2.1 Quyền lợi - Lợi ích - desktop only -->
@@ -460,90 +471,98 @@
     </div>
 
     <!-- 5. Chương trình khuyến mại -->
+    <br>
     <div class="container-fluid">
-        
-        <div class="row">
-            <h2 class="col mx-4">CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
+        <div class="row ">
+            <h2 class="col mx-4 mb-4">CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
         </div>
-        <div class = "row ">
-            <div class="col col-6 col-md-3 p-4">
-                <img class="img-fluid max-width: 100%" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351390471_eae4c80956_o__1_.jpg">
-                <p class="fs-6 mb-0 ">Áo polo can phối</p>
-                <p class="text-danger fw-bold">420.000 đ</p>
-            </div>
-    
-            <div class="col col-6 col-md-3 p-4">
-                <img class="img-fluid max-width: 100%" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351814650_0621a5a122_o.jpg">      
-                <p class="fs-6 mb-0">Áo polo họa tiết Pattern</p>
-                <p class="text-danger fw-bold">420.000 đ</p>
+        <div class = "row row-cols-2  row-cols-md-4 px-4">
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351390471_eae4c80956_o__1_.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold ">Áo polo can phối</p>
+                <p class="fs-5 text-danger fw-bold">420.000 đ</p>
             </div>
             
-            <div class="col col-6 col-md-3 p-4">
-                <img class="img-fluid max-width:100%" src="https://bucket.nhanh.vn/store/2071/ps/20221013/52288898508_ed1cdb9c89_o.jpg">
-                <p class="fs-6 mb-0">Áo polo in tràn họa tiết</p>
-                <p class="text-danger fw-bold">400.000 đ</p>
+            
+
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351814650_0621a5a122_o.jpg">      
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo họa tiết Pattern</p>
+                <p class="fs-5 text-danger fw-bold">420.000 đ</p>
+            </div>
+            
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221013/52288898508_ed1cdb9c89_o.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo in tràn họa tiết</p>
+                <p class="fs-5 text-danger fw-bold">400.000 đ</p>
             </div>
     
-            <div class="col col-6 col-md-3 p-4">
-                <img class="img-fluid max-width:100%" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52307427720_979d4c2935_o.jpg">
-                <p class="fs-6 mb-0">Áo polo trơn bo kẻ</p>
-                <p class="text-danger fw-bold">380.000 đ</p>
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52307427720_979d4c2935_o.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo trơn bo kẻ</p>
+                <p class="fs-5 text-danger fw-bold">380.000 đ</p>
             </div>
         </div>
     
-        <div class="row px-4 mb-4 col-12 col-md-4 d-flex align-self-center" >
+        <div class="row mb-4 col-12 col-md-6 mx-auto" >
             <button type="button" class="btn btn-outline-danger">Xem thêm</button>
         </div>
     </div>
 
-    <!-- 6. Quyền lợi - Lợi ích -->
-    <div class="container-fluid">
-
-        <section class="d-md-none">
-            <div class="row">
-                <div class="col-6 col-md-3 text-center">
+    <!-- 6. Quyền lợi - Lợi ích Only mobile -->
+    <div class="container-fluid d-md-none">
+        <div class="row">
+            <div class="col-6 text-center">
+                <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-6">
                             <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_3Kn3hmVgfqjT0MxOzNExmBAF.png">
                         </div>
                     </div>
-                    <p class="fs-3 text-danger m-0">Freeship</p>
-                    <p>Miễn phí ship với đơn hàng > 500k</p>
                 </div>
-    
-                <div class="col-6 col-md-3 text-center">
+                <p class="fs-4 text-danger m-0">Freeship</p>
+                <p>Miễn phí ship với đơn hàng > 500k</p>
+            </div>
+
+            <div class="col-6  text-center">
+                <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-6">
                             <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_wpbKMwEdiohcjWjlwhyeqgql.png">
                         </div>
                     </div>
-                    <p class="fs-3 text-danger m-0">Thanh toán COD</p>
-                    <p>Kiểm tra, thanh toán khi nhận hàng COD</p>
                 </div>
-    
-                <div class="col-6 col-md-3 text-center">
+                <p class="fs-4 text-danger m-0">Thanh toán COD</p>
+                <p>Kiểm tra, thanh toán khi nhận hàng COD</p>
+            </div>
+
+            <div class="col-6 text-center">
+                <div class="container">
+
                     <div class="row justify-content-center">
                         <div class="col-6">
                             <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_aUKSes75e9wDHSgoOXvYFqvS.png">
                         </div>
                     </div>
-                    <p class="fs-3 text-danger m-0">Khách hàng VIP</p>
-                    <p class="">Ưu đãi dành cho khách hàng thân thiết</p>
                 </div>
-    
-                <div class="col-6 col-md-3 text-center">
+                <p class="fs-4 text-danger m-0">Khách hàng VIP</p>
+                <p class="">Ưu đãi dành cho khách hàng thân thiết</p>
+            </div>
+
+            <div class="col-6 text-center">
+                <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-6">
                             <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_m0Z9Blszj8ygEMGd54loKxBu.png">
                         </div>
                     </div>
-                    <p class="fs-3 text-danger m-0">Hỗ trợ bảo hành</p>
-                    <p class=" fs-6">Đối sản phẩm tại tất cả store TORANO</p>
                 </div>
-    
-                
+                <p class="fs-4 text-danger m-0">Hỗ trợ bảo hành</p>
+                <p class=" fs-6">Đối sản phẩm tại tất cả store TORANO</p>
             </div>
-        </section>
+
+            
+        </div>
     </div>
 
 
@@ -756,7 +775,7 @@
 
 
     <!-- 9. Kết nối - TMDT (mobile only) --> 
-    <section class="d-sm-block d-md-none">
+    <div class=" container-fluid d-sm-block d-md-none">
         <div class="row mt-4">
             <div class="col text-center">
                 <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
@@ -781,16 +800,16 @@
             </div>
         </div>
         <hr>
-    </section>
+    </div>
 
     
 
     <!-- 10. Info -->
     <!-- On mobile -->
     <!-- done -->
-    <section class="d-sm-block d-md-none">
+    <div class="container-fluid d-sm-block d-md-none">
         <div class="row text-center">
-            <img src="Project/logo1.png">
+            <img class="img-fluid" src="https://www.flickr.com/photos/140487787@N04/52558408933/">
             <p class="fs-6">Hệ thống thời trang cho nam giới hàng đầu Việt Nam, hướng tới sự phóng khoáng, lịch lãm và trẻ trung.</p>
         </div>
         <hr>
@@ -809,13 +828,13 @@
             <br>
             <br><br><br>
         </div>
-    </section>
-    <hr>
+        <hr>
+    </div>
 
     <!-- On desktop -->
     <!-- done -->
-    <section class="d-none d-lg-block">
-        <div class="row mx-3 ">
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row">
             
             <!-- Gọi mua hàng -->
             <div class="col-3  p-4">
@@ -853,10 +872,10 @@
                 </form>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- 11. End Navigation - Mobile only-->
-    <section class="d-sm-block d-md-none fixed-bottom">
+    <div class="container-fluid d-sm-block d-md-none fixed-bottom">
         <div class="row  bg-danger text-white mx-1 pt-3 ">
             <div class="col-3 text-center px-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -887,7 +906,7 @@
             </div>
         </div>
         <hr>
-    </section>
+    </div>
 
     <!-- 12. Footer - desktop only -->
     <!-- done -->
@@ -931,3 +950,6 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
