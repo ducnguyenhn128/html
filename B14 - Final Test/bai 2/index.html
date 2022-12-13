@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="result">
+
+    </div>
+    
+    <script>
+        
+        function add_a_line(x) {
+            const line = document.createElement('p');
+            for (let i = 0 ; i < x ; i++) {
+                line.innerHTML += '*';
+            }
+
+            // Add to web page
+            const result = document.getElementById('result');
+            result.appendChild(line);
+        }
+
+        // add_a_line(3);
+
+        function numberOneTriangle(n) {
+                for (let j = 1 ; j <= n ; j++) {
+                    add_a_line(j);
+                }
+        }
+
+        numberOneTriangle(8);
+        
+    </script>
+</body>
+</html>
